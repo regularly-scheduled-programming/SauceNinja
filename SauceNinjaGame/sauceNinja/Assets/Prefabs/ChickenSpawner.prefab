@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9203072229316623720}
   - component: {fileID: 6103978535459371357}
   m_Layer: 0
-  m_Name: ChickenSpawner 1
+  m_Name: ChickenSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,3 +93,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6de25221d2e78e43a489aaca8962230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chickenPrefab: {fileID: 924654090631624822, guid: 0d3c4f5023199904bb320ac53e98d108,
+    type: 3}
+  spawnInterval: 2
+  objectMinX: -3
+  objectMaxX: 3
+  objectY: -5
