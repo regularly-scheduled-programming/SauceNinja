@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1381585477721558453
+--- !u!1001 &7965368585954583935
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 924654090631624822, guid: 0d3c4f5023199904bb320ac53e98d108,
         type: 3}
       propertyPath: m_Name
-      value: ChickenHoneyMustard
+      value: ChickenBBQ
       objectReference: {fileID: 0}
     - target: {fileID: 8921882298369243675, guid: 0d3c4f5023199904bb320ac53e98d108,
         type: 3}
@@ -70,22 +70,22 @@ PrefabInstance:
     - target: {fileID: -9176255974841881675, guid: 0d3c4f5023199904bb320ac53e98d108,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -9176255974841881675, guid: 0d3c4f5023199904bb320ac53e98d108,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.99106956
+      value: 0.25209865
       objectReference: {fileID: 0}
     - target: {fileID: -9176255974841881675, guid: 0d3c4f5023199904bb320ac53e98d108,
         type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.12971699
       objectReference: {fileID: 0}
     - target: {fileID: 4752585607817779227, guid: 0d3c4f5023199904bb320ac53e98d108,
         type: 3}
       propertyPath: CurrentSauce
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5178918058619919788, guid: 0d3c4f5023199904bb320ac53e98d108,
         type: 3}

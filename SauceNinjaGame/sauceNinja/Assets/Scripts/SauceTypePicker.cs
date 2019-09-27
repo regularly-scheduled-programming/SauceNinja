@@ -2,13 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SauceTypePicker : MonoBehaviour
+public class SauceTypePicker :  WingType
 {
-
-
-    public enum sauceType { NONE , HoneyGarlic, BBQ, Buffalo}//1 = HG, 2 = BBQ , 3 = Buffalo
-
-
     public sauceType currentSauce;
     // Start is called before the first frame update
     void Start()

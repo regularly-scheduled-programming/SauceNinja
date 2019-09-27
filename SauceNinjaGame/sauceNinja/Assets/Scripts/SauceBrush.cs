@@ -116,7 +116,7 @@ public class SauceBrush : MonoBehaviour {
         }
     }
 
-	void StopSaucing ()
+	public void StopSaucing ()
 	{
 		isSaucing = false;
 		currentSauceTrail.transform.SetParent(null);
