@@ -9,7 +9,7 @@ public class MoveChicken : MonoBehaviour
 
     [SerializeField]
     private float destroyTime;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,10 @@ public class MoveChicken : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.y < -5.1f)
+        {
+            FindObjectOfType<GameManager>().TakeLifeAway();
+            Destroy(gameObject);
+        }
     }
 }

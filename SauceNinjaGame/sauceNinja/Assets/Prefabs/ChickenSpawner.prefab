@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0.9342736, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -93,9 +93,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6de25221d2e78e43a489aaca8962230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chickenPrefab: {fileID: 924654090631624822, guid: 0d3c4f5023199904bb320ac53e98d108,
-    type: 3}
+  chickenPrefabs:
+  - {fileID: 5115723134496472977, guid: 76053f15f4ac19d48a527aace1fa7e69, type: 3}
+  - {fileID: 7088572878355258633, guid: c6ad633ebc035b94388b1faa6c1ea335, type: 3}
+  - {fileID: 2303986291065959875, guid: 72f0b6f2e9790ec49a5e7dd5e57bfc03, type: 3}
   spawnInterval: 2
-  objectMinX: -3
-  objectMaxX: 3
+  objectMinX: -1.97
+  objectMaxX: 1.97
   objectY: -5
