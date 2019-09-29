@@ -1436,7 +1436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &631608305
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3414,7 +3414,7 @@ MonoBehaviour:
   uiMaster: {fileID: 1580502086}
   spawner: {fileID: 1866221757}
   nextRoundUI: {fileID: 1420724585}
-  LooseUI: {fileID: 0}
+  LooseUI: {fileID: 631608304}
 --- !u!4 &1692956533
 Transform:
   m_ObjectHideFlags: 0

@@ -19,8 +19,9 @@ void Start()
 
             if( this.GetComponent<WingInteraction>().Sauced(SauceBrush.GetComponent<SauceTypePicker>().currentSauce))
             {
-                SC.Score++;
-                Destroy (this.gameObject);
+                SC.Score+=25;
+                SC.CheckScore();
+                //Destroy (this.gameObject);
             }
             else
             {

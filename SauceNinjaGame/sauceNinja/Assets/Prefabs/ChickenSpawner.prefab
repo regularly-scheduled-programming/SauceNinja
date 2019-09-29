@@ -97,7 +97,8 @@ MonoBehaviour:
   - {fileID: 5115723134496472977, guid: 76053f15f4ac19d48a527aace1fa7e69, type: 3}
   - {fileID: 7088572878355258633, guid: c6ad633ebc035b94388b1faa6c1ea335, type: 3}
   - {fileID: 2303986291065959875, guid: 72f0b6f2e9790ec49a5e7dd5e57bfc03, type: 3}
-  spawnInterval: 2
   objectMinX: -1.97
   objectMaxX: 1.97
   objectY: -5
+  MinSpawnInterval: 1
+  MaxSpawnInterval: 3
