@@ -13,11 +13,11 @@ void Start()
         SauceBrush = GameObject.FindObjectOfType<SauceBrush>().gameObject;
     }
 
-	void OnCollisionEnter2D(Collision2D collision) {
+	void OnTriggerEnter2D(Collider2D collision) {
 		if (collision.gameObject.tag == "Cut")
         {
 
-            if( this.GetComponent<WingInteraction>().Sauced(SauceBrush.GetComponent<SauceTypePicker>().currentSauce))
+            if( this.GetComponent<WingInteraction>().Sauced(SauceBrush.GetComponent<SauceTypePicker>().currentBrushSauce))
             {
                 SC.Score+=25;
                 SC.CheckScore();
@@ -25,7 +25,7 @@ void Start()
             }
             else
             {
-                SauceBrush.GetComponent<SauceTypePicker>().currentSauce = WingType.sauceType.NONE;
+                SauceBrush.GetComponent<SauceTypePicker>().PickSauce(0);
                 SauceBrush.GetComponent<SauceBrush>().StopSaucing();
               //  Destroy (this.gameObject);
             }
