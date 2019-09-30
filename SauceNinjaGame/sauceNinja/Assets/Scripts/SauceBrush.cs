@@ -45,7 +45,21 @@ public class SauceBrush : MonoBehaviour {
         {
              if (Input.touchCount > 0)
             {
-                StartSaucing();
+                Touch touch = Input.GetTouch(0);
+                switch(touch.phase)
+                {
+                    case TouchPhase.Began:
+                    break;
+
+                    case TouchPhase.Moved:
+                     StartSaucing();
+                    break;
+
+                    case TouchPhase.Ended:
+                     StopSaucing();
+                    break;
+                }
+               
             }
             else if (Input.touchCount == 0)
             {
@@ -119,9 +133,14 @@ public class SauceBrush : MonoBehaviour {
 	public void StopSaucing ()
 	{
 		isSaucing = false;
-		currentSauceTrail.transform.SetParent(null);
+        if(currentSauceTrail != null)
+        {
+            currentSauceTrail.transform.SetParent(null);
+        }
+		
 		Destroy(currentSauceTrail, 2f);
 		circleCollider.enabled = false;
+
 	}
 
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class WingSpawner : MonoBehaviour
@@ -22,7 +23,10 @@ bool Paused=false;
     // Start is called before the first frame update
     void Start()
     {
-        //InvokeRepeating("spawnObject",Random.Range(MinSpawnInterval,MaxSpawnInterval), this.MaxSpawnInterval);
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            InvokeRepeating("spawnObject",Random.Range(MinSpawnInterval,MaxSpawnInterval), this.MaxSpawnInterval);
+        }
         
         
     }

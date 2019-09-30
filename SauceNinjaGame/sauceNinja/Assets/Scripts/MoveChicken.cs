@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MoveChicken : MonoBehaviour
@@ -23,7 +24,10 @@ public class MoveChicken : MonoBehaviour
     {
         if (transform.position.y < -5.1f)
         {
+            if(SceneManager.GetActiveScene().buildIndex==1)
+            {
             FindObjectOfType<GameManager>().TakeLifeAway();
+            }
             Destroy(gameObject);
         }
     }
