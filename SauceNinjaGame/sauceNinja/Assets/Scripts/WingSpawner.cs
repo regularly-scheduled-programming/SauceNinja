@@ -20,6 +20,8 @@ bool Paused=false;
 
 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,7 @@ bool Paused=false;
         {
             InvokeRepeating("spawnObject",Random.Range(MinSpawnInterval,MaxSpawnInterval), this.MaxSpawnInterval);
         }
+
         
         
     }
@@ -53,20 +56,26 @@ bool Paused=false;
         GameObject newWing= Instantiate(wingToSpawn);
         newWing.transform.position = new Vector2(Random.Range(this.objectMinX,this.objectMaxX),this.objectY);
         StartCoroutine(SpawnDelay(Random.Range(MinSpawnInterval, MaxSpawnInterval)));
+        
     }
 
     public void PauseSpawner()
     {
+        
         Paused = true;
-        //StopCoroutine(SpawnDelay(0));
+        StopAllCoroutines();
         Destroy(FindObjectOfType<MoveChicken>().gameObject); 
     }
     IEnumerator SpawnDelay(float SpawnDelay)
     {
         yield return new WaitForSeconds(SpawnDelay);
         if(!Paused){
-
+            
             spawnObject();
+        }
+        else
+        {
+            StopAllCoroutines();
         }
         
     }

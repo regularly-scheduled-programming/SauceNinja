@@ -45,6 +45,7 @@ public class WingInteraction : MonoBehaviour
         }
 
         else {
+            //Handheld.Vibrate();
             result = false;
             FindObjectOfType<GameManager>().TakeLifeAway();
             RB.simulated = false;
