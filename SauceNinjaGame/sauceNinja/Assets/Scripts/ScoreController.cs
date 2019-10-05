@@ -30,6 +30,7 @@ public class ScoreController : MonoBehaviour
 
     public void CheckScore()
     {
+        FindObjectOfType<GoalProgress>().UpdateProgress(Score);
         if (Score >= Goal)
         {
             GetComponent<GameManager>().RoundComplete();

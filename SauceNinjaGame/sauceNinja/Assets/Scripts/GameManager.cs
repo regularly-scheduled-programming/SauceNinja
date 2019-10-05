@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
             CurrentRound++;
 
         }
+        uiMaster.GetComponent<GoalProgress>().SetupProgress(RoundSettings[CurrentRound].scoreRequired, SC.Score);
         nextRoundUI.SetActive(false);
         spawner.SetRoundSettings(RoundSettings[CurrentRound]);
         SC.UpdateGoal(RoundSettings[CurrentRound].scoreRequired);

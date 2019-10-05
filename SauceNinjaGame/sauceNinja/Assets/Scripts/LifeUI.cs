@@ -7,6 +7,8 @@ public class LifeUI : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] lifePoints;
+    [SerializeField]
+    private Sprite LostLifeSprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,23 +25,23 @@ public class LifeUI : MonoBehaviour
         switch (lives){
 
             case 4:
-                lifePoints[4].SetActive(false);
+                lifePoints[4].GetComponent<Image>().sprite=LostLifeSprite;
                 break;
 
            case 3:
-                lifePoints[3].SetActive(false);
+                lifePoints[3].GetComponent<Image>().sprite = LostLifeSprite;
                 break;
 
             case 2:
-                lifePoints[2].SetActive(false);
+                lifePoints[2].GetComponent<Image>().sprite = LostLifeSprite;
                 break;
 
             case 1:
-                lifePoints[1].SetActive(false);
+                lifePoints[1].GetComponent<Image>().sprite = LostLifeSprite;
                 break;
 
             case 0:
-                lifePoints[0].SetActive(false);
+                lifePoints[0].GetComponent<Image>().sprite = LostLifeSprite;
                 break;
 
 

@@ -12,6 +12,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChickenBBQ
       objectReference: {fileID: 0}
+    - target: {fileID: -9176255974841881675, guid: 0d3c4f5023199904bb320ac53e98d108,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9176255974841881675, guid: 0d3c4f5023199904bb320ac53e98d108,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9176255974841881675, guid: 0d3c4f5023199904bb320ac53e98d108,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9176255974841881675, guid: 0d3c4f5023199904bb320ac53e98d108,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2114923604191366882, guid: 81cc4c51d66b44347a0bb665939d7ed3,
+        type: 3}
+    - target: {fileID: 995139470548983473, guid: 0d3c4f5023199904bb320ac53e98d108,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178918058619919788, guid: 0d3c4f5023199904bb320ac53e98d108,
+        type: 3}
+      propertyPath: CurrentSauce
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8921882298369243675, guid: 0d3c4f5023199904bb320ac53e98d108,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,30 +98,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -9176255974841881675, guid: 0d3c4f5023199904bb320ac53e98d108,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -9176255974841881675, guid: 0d3c4f5023199904bb320ac53e98d108,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.25209865
-      objectReference: {fileID: 0}
-    - target: {fileID: -9176255974841881675, guid: 0d3c4f5023199904bb320ac53e98d108,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.12971699
-      objectReference: {fileID: 0}
     - target: {fileID: 4752585607817779227, guid: 0d3c4f5023199904bb320ac53e98d108,
         type: 3}
       propertyPath: CurrentSauce
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5178918058619919788, guid: 0d3c4f5023199904bb320ac53e98d108,
+    - target: {fileID: 1623161607656490105, guid: 0d3c4f5023199904bb320ac53e98d108,
         type: 3}
-      propertyPath: CurrentSauce
-      value: 2
-      objectReference: {fileID: 0}
+      propertyPath: WingSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -2114923604191366882, guid: 81cc4c51d66b44347a0bb665939d7ed3,
+        type: 3}
+    - target: {fileID: 1623161607656490105, guid: 0d3c4f5023199904bb320ac53e98d108,
+        type: 3}
+      propertyPath: WingSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 939391932938818480, guid: 81cc4c51d66b44347a0bb665939d7ed3,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3c4f5023199904bb320ac53e98d108, type: 3}

@@ -148,5 +148,17 @@ PrefabInstance:
       propertyPath: CurrentSauce
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1623161607656490105, guid: 0d3c4f5023199904bb320ac53e98d108,
+        type: 3}
+      propertyPath: WingSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 6797243773466961077, guid: 81cc4c51d66b44347a0bb665939d7ed3,
+        type: 3}
+    - target: {fileID: 1623161607656490105, guid: 0d3c4f5023199904bb320ac53e98d108,
+        type: 3}
+      propertyPath: WingSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -4870725620356270525, guid: 81cc4c51d66b44347a0bb665939d7ed3,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3c4f5023199904bb320ac53e98d108, type: 3}
