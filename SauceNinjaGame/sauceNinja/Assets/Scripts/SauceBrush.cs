@@ -115,9 +115,10 @@ public class SauceBrush : MonoBehaviour {
 	{
         if(isUsingMouse)//MOUSE
         {
+           
             isSaucing = true;
             currentSauceTrail = Instantiate(SaucePrefab, transform);
-            previousPos = cam.ScreenToWorldPoint(Input.mousePosition);
+            //previousPos = cam.ScreenToWorldPoint(Input.mousePosition);
             circleCollider.enabled = false;
         }
         else//TOUCHSCREEN
@@ -125,13 +126,14 @@ public class SauceBrush : MonoBehaviour {
             Touch touch = Input.GetTouch(0);
             isSaucing = true;
             currentSauceTrail = Instantiate(SaucePrefab, transform);
-            previousPos = cam.ScreenToWorldPoint(touch.position);
+            //previousPos = cam.ScreenToWorldPoint(touch.position);
             circleCollider.enabled = false;
         }
     }
 
 	public void StopSaucing ()
 	{
+        
 		isSaucing = false;
         if(currentSauceTrail != null)
         {

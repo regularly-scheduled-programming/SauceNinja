@@ -14,7 +14,7 @@ void Start()
     }
 
 	void OnTriggerEnter2D(Collider2D collision) {
-		if (collision.gameObject.tag == "Cut")
+		if (collision.gameObject.tag == "Cut"&&collision.gameObject.transform.position.y>-2.48f)
         {
 
             if( this.GetComponent<WingInteraction>().Sauced(SauceBrush.GetComponent<SauceTypePicker>().currentBrushSauce))
@@ -27,6 +27,7 @@ void Start()
             {
                 SauceBrush.GetComponent<SauceTypePicker>().PickSauce(0);
                 SauceBrush.GetComponent<SauceBrush>().StopSaucing();
+                FindObjectOfType<KatanaManager>().TurnOffAllKatanas();
               //  Destroy (this.gameObject);
             }
 
