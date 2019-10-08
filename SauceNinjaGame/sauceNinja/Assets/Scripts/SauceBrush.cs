@@ -40,6 +40,9 @@ public class SauceBrush : MonoBehaviour {
             {
                 StopSaucing();
             }
+            
+           
+        
         }
         else//TOUCHSCREEN
         {
@@ -53,6 +56,10 @@ public class SauceBrush : MonoBehaviour {
 
                     case TouchPhase.Moved:
                      StartSaucing();
+                    break;
+
+                    case TouchPhase.Stationary:
+                    StopSaucing();
                     break;
 
                     case TouchPhase.Ended:
@@ -78,6 +85,7 @@ public class SauceBrush : MonoBehaviour {
 	{
         if(isUsingMouse)//MOUSE
         {
+            
             Vector2 newPosition = cam.ScreenToWorldPoint(Input.mousePosition);
             myBody.position = newPosition;
 
@@ -85,12 +93,16 @@ public class SauceBrush : MonoBehaviour {
             if (velocity > minVelocity)
             {
                 circleCollider.enabled = true;
+               SaucePrefab.SetActive(true);
+                
             } else
             {
                 circleCollider.enabled = false;
+                 SaucePrefab.SetActive(false);
             }
 
             previousPos = newPosition;
+           
         }
         else//TOUCHSCREEN
         {
@@ -117,17 +129,17 @@ public class SauceBrush : MonoBehaviour {
         {
            
             isSaucing = true;
-            currentSauceTrail = Instantiate(SaucePrefab, transform);
-            //previousPos = cam.ScreenToWorldPoint(Input.mousePosition);
-            circleCollider.enabled = false;
+            previousPos = cam.ScreenToWorldPoint(Input.mousePosition);
+           // currentSauceTrail = Instantiate(SaucePrefab,transform);
+            circleCollider.enabled = true;
         }
         else//TOUCHSCREEN
         {
             Touch touch = Input.GetTouch(0);
             isSaucing = true;
-            currentSauceTrail = Instantiate(SaucePrefab, transform);
-            //previousPos = cam.ScreenToWorldPoint(touch.position);
-            circleCollider.enabled = false;
+            //currentSauceTrail = Instantiate(SaucePrefab, transform);
+            previousPos = cam.ScreenToWorldPoint(touch.position);
+            circleCollider.enabled = true;
         }
     }
 
@@ -135,12 +147,14 @@ public class SauceBrush : MonoBehaviour {
 	{
         
 		isSaucing = false;
+       
         if(currentSauceTrail != null)
         {
-            currentSauceTrail.transform.SetParent(null);
+           
         }
 		
-		Destroy(currentSauceTrail, 2f);
+		//Destroy(currentSauceTrail);
+        
 		circleCollider.enabled = false;
 
 	}
